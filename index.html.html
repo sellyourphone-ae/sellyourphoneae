@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sell your used phone in Dubai with free doorstep pickup & instant cash payment. iPhone & Samsung selling service. Quick, safe & reliable across all Dubai areas.">
+    <meta name="keywords" content="sell phone Dubai, sell iPhone Dubai, sell Samsung Dubai, used phone buyer Dubai, instant cash for phones, free pickup Dubai">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sell Your Used Phone in Minutes - Free Pickup Dubai">
+    <meta property="og:description" content="Get instant cash for your old phone. Free pickup across Dubai. Safe, fast & reliable service.">
+    <meta property="og:type" content="website">
+    <title>Sell Your Used Phone Dubai | Free Pickup & Instant Cash Payment</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #1a1a1a;
+            background: #f5f7fa;
+            overflow-x: hidden;
+        }
+
+        /* Smooth Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: fadeInUp 0.5s ease;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 5px 0;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        header {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .hero-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .section {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            color: #764ba2;
+            font-size: 1.5em;
+            margin: 25px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            color: #555;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .step-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 25px;
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .step-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .locations {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .location-tag {
+            background: #f0f4ff;
+            color: #667eea;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.95em;
+            font-weight: 600;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            transition: all 0.3s ease;
+            margin: 20px 0;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+        }
+
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .benefit-card {
+            background: #f8f9ff;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+
+        .benefit-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .faq-section {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            border-left: 4px solid #764ba2;
+        }
+
+        .faq-question {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.15em;
+            margin-bottom: 10px;
+        }
+
+        .faq-answer {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .steps {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Sell Your Used Phone in Minutes</h1>
+        <p class="subtitle">Free Pickup Across Dubai | Instant Cash Payment</p>
+    </header>
+
+    <div class="hero-section">
+        <p>Selling your used mobile device in Dubai doesn't have to be stressful. With <strong><a href="https://sellyourphone.ae/index.php">Sell Your Phone</a></strong>, you can have your device picked up from your doorstep, inspected quickly, and receive cash instantly — all without the usual hassle of meeting buyers or negotiating prices.</p>
+        
+        <p>If it's an iPhone you want to sell, their <strong><a href="https://sellyourphone.ae/sell-iphone-dubai.php">iPhone selling service in Dubai</a></strong> walks you through the whole process, from valuation to payment, without any confusion or delay.</p>
+        
+        <a href="https://sellyourphone.ae/form.php" class="cta-button">📱 Get Instant Quote Now</a>
+    </div>
+
+    <div class="section">
+        <h2>Why People in Dubai Trust Sell Your Phone</h2>
+        <p>Many residents rely on <strong><a href="https://sellyourphone.ae/index.php">Sell Your Phone</a></strong> for its professional approach. Their <a href="https://sellyourphone.ae/about.php">About page</a> explains how each device is carefully inspected and how your personal data stays secure throughout the process.</p>
+
+        <div class="benefits">
+            <div class="benefit-card">
+                <h4>✅ Free Doorstep Pickup</h4>
+                <p>No need to travel anywhere. We come to you at your convenience.</p>
+            </div>
+            <div class="benefit-card">
+                <h4>💰 Instant Cash Payment</h4>
+                <p>Get paid immediately after inspection, no waiting periods.</p>
+            </div>
+            <div class="benefit-card">
+                <h4>🔒 Secure Data Erasure</h4>
+                <p>Your personal information is completely protected and securely deleted.</p>
+            </div>
+            <div class="benefit-card">
+                <h4>📊 Best Market Rates</h4>
+                <p>Competitive pricing based on real-time market values.</p>
+            </div>
+        </div>
+
+        <p>For residents in busy areas like <a href="https://sellyourphone.ae/downtown-dubai.php">Downtown Dubai</a> and <a href="https://sellyourphone.ae/dubai-marina.php">Dubai Marina</a>, the convenience of free doorstep pickup is a huge benefit.</p>
+
+        <p>Samsung owners can also check out the <a href="https://sellyourphone.ae/sell-samsung-dubai.php">Samsung selling service in Dubai</a> to get device-specific quotes and instructions.</p>
+    </div>
+
+    <div class="section">
+        <h2>How It Works – Simple Steps to Sell Your Phone</h2>
+        
+        <div class="steps">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3 style="color: white;">Share Device Info</h3>
+                <p>Fill out the <a href="https://sellyourphone.ae/form.php">quick booking form</a> with your device details.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3 style="color: white;">Pick Location</h3>
+                <p>Choose your convenient location — home, office, or anywhere else.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3 style="color: white;">Quick Inspection</h3>
+                <p>Our technician evaluates your device accurately on-site.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">4</div>
+                <h3 style="color: white;">Instant Payment</h3>
+                <p>Get paid immediately in cash or via bank transfer.</p>
+            </div>
+        </div>
+
+        <h3>Areas We Cover:</h3>
+            <div class="locations">
+                <a href="https://sellyourphone.ae/downtown-dubai.php" class="location-tag">Downtown Dubai</a>
+                <a href="https://sellyourphone.ae/business-bay.php" class="location-tag">Business Bay</a>
+                <a href="https://sellyourphone.ae/dubai-marina.php" class="location-tag">Dubai Marina</a>
+                <a href="https://sellyourphone.ae/jbr.php" class="location-tag">JBR</a>
+                <a href="https://sellyourphone.ae/palm-jumeriah.php" class="location-tag">Palm Jumeirah</a>
+                <a href="https://sellyourphone.ae/jumeirah.php" class="location-tag">Jumeirah</a>
+                <a href="https://sellyourphone.ae/al-barsha.php" class="location-tag">Al Barsha</a>
+                <a href="https://sellyourphone.ae/dubai-hills-estate.php" class="location-tag">Dubai Hills Estate</a>
+                <a href="https://sellyourphone.ae/emirates-hills.php" class="location-tag">Emirates Hills</a>
+                <a href="https://sellyourphone.ae/arabian-ranches.php" class="location-tag">Arabian Ranches</a>
+                <a href="https://sellyourphone.ae/damac-hills.php" class="location-tag">Damac Hills</a>
+                <a href="https://sellyourphone.ae/bluewaters-island.php" class="location-tag">Bluewaters Island</a>
+                <a href="https://sellyourphone.ae/city-walk.php" class="location-tag">City Walk</a>
+                <a href="https://sellyourphone.ae/mirdif.php" class="location-tag">Mirdif</a>
+                <a href="https://sellyourphone.ae/jlt.php" class="location-tag">JLT</a>
+                <a href="https://sellyourphone.ae/jvc.php" class="location-tag">JVC</a>
+                <a href="https://sellyourphone.ae/jvt.php" class="location-tag">JVT</a>
+                <a href="https://sellyourphone.ae/meadows.php" class="location-tag">Meadows</a>
+                <a href="https://sellyourphone.ae/springs.php" class="location-tag">Springs</a>
+                <a href="https://sellyourphone.ae/greens.php" class="location-tag">Greens & Views</a>
+                <a href="https://sellyourphone.ae/discovery-gardens.php" class="location-tag">Discovery Gardens</a>
+                <a href="https://sellyourphone.ae/dso.php" class="location-tag">Dubai Silicon Oasis</a>
+                <a href="https://sellyourphone.ae/international-city.php" class="location-tag">International City</a>
+                <a href="https://sellyourphone.ae/satwa.php" class="location-tag">Satwa</a>
+                <a href="https://sellyourphone.ae/al-wasl.php" class="location-tag">Al Wasl</a>
+                <a href="https://sellyourphone.ae/al-safa.php" class="location-tag">Al Safa</a>
+                <a href="https://sellyourphone.ae/deira.php" class="location-tag">Deira</a>
+                <a href="https://sellyourphone.ae/bur-dubai.php" class="location-tag">Bur Dubai</a>
+                <a href="https://sellyourphone.ae/dubai-sports-city.php" class="location-tag">Dubai Sports City</a>
+            </div>
+    </div>
+
+    <div class="section">
+        <h2>Maximizing Your Phone's Value</h2>
+        <p>Dubai's smartphone market moves quickly. Selling promptly ensures you get the best price, and many people in <a href="https://sellyourphone.ae/dubai-hills-estate.php">Dubai Hills Estate</a> use this service to avoid losing value as new models arrive.</p>
+        
+        <p>Even slightly older or damaged phones are given competitive offers — you don't have to worry about lowball buyers.</p>
+    </div>
+
+    <div class="section">
+        <h2>Data Privacy You Can Trust</h2>
+        <p>Privacy is a top priority. <strong><a href="https://sellyourphone.ae/index.php">Sell Your Phone</a></strong> ensures all personal data is securely erased, giving sellers peace of mind. Communities like <a href="https://sellyourphone.ae/jlt.php">JLT</a>, <a href="https://sellyourphone.ae/mirdif.php">Mirdif</a>, and <a href="https://sellyourphone.ae/al-barsha.php">Al Barsha</a> rely on this secure, reliable process every day.</p>
+    </div>
+
+    <div class="section" style="text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <h2 style="color: white; border-bottom: 3px solid white;">Ready to Sell? Book Your Free Pickup Now</h2>
+        <p style="color: white; font-size: 1.2em;">Selling your phone has never been easier. Schedule a pickup anywhere in Dubai. It's quick, convenient, and ensures you walk away with cash in hand without any stress.</p>
+        <a href="https://sellyourphone.ae/form.php" class="cta-button" style="background: white; color: #667eea;">📞 Book Free Pickup Now</a>
+    </div>
+
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question">1. How can I sell my phone quickly in Dubai?</div>
+            <div class="faq-answer">You can sell your phone quickly by using services like <a href="https://sellyourphone.ae/index.php">Sell Your Phone</a>, which offer free doorstep pickup, on-site inspection, and instant cash payment.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">2. Can I sell a damaged or old phone?</div>
+            <div class="faq-answer">Yes, even older or slightly damaged devices are accepted. They are evaluated on their condition and offered a fair price through <a href="https://sellyourphone.ae/index.php">Sell Your Phone</a>.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">3. Is it safe to sell my phone online in Dubai?</div>
+            <div class="faq-answer">Using professional services such as <a href="https://sellyourphone.ae/index.php">Sell Your Phone</a> ensures safety. They protect your personal data and conduct secure transactions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">4. How do I schedule a free pickup?</div>
+            <div class="faq-answer">You can schedule a free pickup easily via the <a href="https://sellyourphone.ae/form.php">booking form</a>, selecting your preferred location and time.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">5. Which areas in Dubai are covered for free pickup?</div>
+            <div class="faq-answer">Major communities such as <a href="https://sellyourphone.ae/downtown-dubai.php">Downtown Dubai</a>, <a href="https://sellyourphone.ae/dubai-marina.php">Dubai Marina</a>, <a href="https://sellyourphone.ae/jvc.php">JVC</a>, and <a href="https://sellyourphone.ae/business-bay.php">Business Bay</a> are fully covered.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">6. How do I get the best price for my phone?</div>
+            <div class="faq-answer">Sell your device as soon as possible to maintain resale value. Using services like <a href="https://sellyourphone.ae/index.php">Sell Your Phone</a> ensures competitive pricing based on real-time market rates.</div>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong><a href="https://sellyourphone.ae/index.php">Sell Your Phone Dubai</a></strong> - Your Trusted Mobile Device Selling Partner</p>
+        <p>© 2025 All Rights Reserved | Fast, Secure & Reliable Service</p>
+    </footer>
+</div>
+</body>
